@@ -1,85 +1,73 @@
-1. Checking Repository Status
+# Git Commands Reference
 
-git status
+## Checking Repository Status
 
-2. Viewing Commit History
+    git status
 
-git log
-git log --oneline
+## Viewing Commit History
 
-3. Creating and Switching Branches
+    git log
+    git log --oneline
 
-git branch
+## Creating and Switching Branches
 
-git branch <branch_name>
+    git branch
+    git branch <branch_name>
+    git checkout <branch_name>
+    git checkout -b <new_branch>
 
-git checkout <branch_name>
+## Staging and Committing Changes
 
-git checkout -b <new_branch>
+    git add <file_name>
+    git add .
+    git commit -m "Your commit message"
 
-4. Staging and Committing Changes
+## Removing Files
 
-git add <file_name>
+    rm <file_name>
+    git rm <file_name>
 
-git add .
+## Merging Branches
 
-git commit -m "Your commit message"
+    git checkout <target_branch>
+    git merge <source_branch>
 
-5. Removing Files
+## Deleting Branches
 
-rm <file_name>
+    git branch -d <branch_name>
+    git push origin --delete <branch_name>
 
-git rm <file_name>
+## Checking Out Specific Commits
 
-6. Merging Branches
+    git checkout <commit_hash>
 
-git checkout <target_branch>
+## Undoing Changes
 
-git merge <source_branch>
+    git reset HEAD
+    git checkout --
+    git revert <commit_hash>
 
-7. Deleting Branches
+## Pushing and Pulling Changes
 
-git branch -d <branch_name>
+    git push origin <branch_name>
+    git pull origin <branch_name>
 
-git push origin --delete <branch_name>
+## Creating and Switching to a New Branch from an Existing Branch
 
-8. Checking Out Specific Commits
+    git checkout -b <new_branch> <existing_branch>
 
-git checkout <commit_hash>
+## Viewing Remote Repositories
 
-9. Undoing Changes
+    git remote -v
 
-git reset HEAD <file>
+## Cloning a Repository
 
-git checkout -- <file>
+    git clone <repo_url>
 
-git revert <commit_hash>
+## Fetching Remote Changes
 
-10. Pushing and Pulling Changes
+    git fetch origin
 
-git push origin <branch_name>
+## Checking the Last Commit
 
-git pull origin <branch_name>
-
-11. Creating and Switching to a New Branch from an Existing Branch
-
-git checkout -b <new_branch> <existing_branch>
-
-12. Viewing Remote Repositories
-
-git remote -v
-
-13. Cloning a Repository
-
-git clone <repo_url>
-
-14. Fetching Remote Changes
-
-git fetch origin
-
-15. Checking the Last Commit
-
-git show
-
-This file provides a quick reference for commonly used Git commands. 🚀
-
+    git show
